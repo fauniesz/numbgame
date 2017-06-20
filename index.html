@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style1.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script1.js"></script>
+    <title>Guess the Number</title>
+  </head>
+  <body>
+    <div id="SCREEN-1">
+      <div class="computer">
+        <h1>HI! WELCOME TO THE GUESS-THE-NUMBER GAME!</h1>
+        <h3>Your goal here is simple: guess the number I'm thinking of.<br>You enter your guess which has <span id="trys"></span> tries to match a number before a game over.</h3>
+      </div>
+      <div>
+        <button id="GAME-START" type="button" name="btn-info">&lt;START&gt;</button>
+      </div>
+    </div>
+    <div id="SCREEN-2">
+      <form id="playerInput">
+        <label for="guess">Your guess goes here:</label>
+        <input id="num" type="number" min="0" max="25" value="0">
+        <button type="submit" class="btn btn-success" value="Submit Button">&lt;ENTER GUESS&gt;</button>
+      </form>
+    </div>
+    <div id="WINBOX">
+      <h1>!!YOUR WINNER!!</h1>
+    </div>
+    <div id="FAILBOX">
+      <h1>!!NOPENOPENOPE!!</h1>
+      <div id="feedback"></div>
+    </div>
+  </body>
+</html>
